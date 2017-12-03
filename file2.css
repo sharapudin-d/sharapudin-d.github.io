@@ -1,14 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+p
+{
+  color: #7c9fd7;
+  font-family: 'Comfortaa', cursive;
+}
 .kek
 {
-  background-color: rgba(255, 255, 255, 0.8);
+  color: #7c9fd7;
+  font-family: 'Comfortaa', cursive;
+  background-color: rgba(180, 180, 180, 0.7);
   border-radius: 15px;
 }
-.body1
+body
 {
-  background-color: rgba(2, 2, 2, 0.5);
+  background-image: url(background-1.jpg);
+  background-size: 100%;
+
 }
-.p1
+.cheburek
 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 16px; 
+  color: #7c9fd7;
+  font-family: 'Comfortaa', cursive;
+  background-color: rgba(180, 180, 180, 0.7);
+  border-radius: 15px;
+}
+.shrek
+{
+  color: #7c9fd7;
+  background-color: rgba(180, 180, 180, 0.7);
+  border-radius: 15px;
+  font-family: 'Comfortaa', cursive;
 }
