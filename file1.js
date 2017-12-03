@@ -25,12 +25,4 @@ function shrek()
 {
     var a = prompt("Введите a");
     var b = prompt("Введите b");
-    alert
-    (
-      a + b;
-      a - b;
-
-    );
-
-
 }

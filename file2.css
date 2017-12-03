@@ -26,8 +26,6 @@ body
 }
 .shrek
 {
+  font-size: 400%;
   color: #7c9fd7;
-  background-color: rgba(180, 180, 180, 0.7);
-  border-radius: 15px;
-  font-family: 'Comfortaa', cursive;
 }
