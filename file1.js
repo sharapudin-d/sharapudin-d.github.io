@@ -19,10 +19,8 @@ function cheburek()
   {
     document.location.href = "demo/index.html";
   }
-
 }
 function shrek()
 {
-    var a = prompt("Введите a");
-    var b = prompt("Введите b");
+document.location.href = "calculator.html"
 }
