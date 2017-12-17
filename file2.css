@@ -29,3 +29,13 @@ body
   font-size: 400%;
   color: #7c9fd7;
 }
+.bb
+{
+  border-radius: 10px;
+  width: 5%;
+  height: 10%;
+}
+.b1
+{
+  font-size: 25%;
+}

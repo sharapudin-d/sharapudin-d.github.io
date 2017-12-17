@@ -24,3 +24,7 @@ function shrek()
 {
 document.location.href = "calculator.html"
 }
+function gop()
+{
+  document.location.href = "f/seeds.html"
+}
