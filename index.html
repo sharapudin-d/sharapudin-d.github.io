@@ -1,25 +1,364 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="file2.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-    <meta charset="utf-8">
-    <title>Page</title>
-  </head>
-  <body>
-    <center>
-    <br><br><br>
-    <p class="p1">
-      hello world
-    </p>
-    <p class="p2">Password</p><input id="1" type="password" value=""><br>
-    <input type="button" name="button" value="Показать" onclick="kek()" id="2" class="kek">
-    <input type="button" name="button" value="Войти" onclick="cheburek()" id="3" class="cheburek">
-    <br><br><br>
-    <div  class="shrek" onclick="shrek()"><i class="fa fa-calculator" aria-hidden="true"></i><p class="b1">Calculator</p></div>
-    <div onclick="gop()"><img src="icon.jpg" class="bb" alt=""><p>Seeds</p></div>
-    <script src="file1.js" charset="utf-8"></script>
-  </center>
-  </body>
+<html lang=ru>
+<head>
+	<meta charset=utf-8>
+	<meta http-equiv=X-UA-Compatible content="IE=edge">
+	<meta name=viewport content="width=1260,  maximum-scale=1, user-scalable=yes">
+	<title> Safia Tea - Ваш поставщик чая </title>
+	<link rel=stylesheet href="assets/css/animate.css">
+	<link rel=stylesheet href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700&amp;subset=cyrillic" rel=stylesheet>
+<link rel=dns-prefetch href="//yandex.ru"><script data-pagespeed-no-defer>(function(){function f(a,b,d){if(a.addEventListener)a.addEventListener(b,d,!1);else if(a.attachEvent)a.attachEvent("on"+b,d);else{var c=a["on"+b];a["on"+b]=function(){d.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var g=window.pagespeed;function k(a){this.g=[];this.f=0;this.h=!1;this.j=a;this.i=null;this.l=0;this.b=!1;this.a=0}function l(a,b){var d=b.getAttribute("data-pagespeed-lazy-position");if(d)return parseInt(d,0);var d=b.offsetTop,c=b.offsetParent;c&&(d+=l(a,c));d=Math.max(d,0);b.setAttribute("data-pagespeed-lazy-position",d);return d}
+function m(a,b){var d,c,e;if(!a.b&&(0==b.offsetHeight||0==b.offsetWidth))return!1;a:if(b.currentStyle)c=b.currentStyle.position;else{if(document.defaultView&&document.defaultView.getComputedStyle&&(c=document.defaultView.getComputedStyle(b,null))){c=c.getPropertyValue("position");break a}c=b.style&&b.style.position?b.style.position:""}if("relative"==c)return!0;e=0;"number"==typeof window.pageYOffset?e=window.pageYOffset:document.body&&document.body.scrollTop?e=document.body.scrollTop:document.documentElement&&
+document.documentElement.scrollTop&&(e=document.documentElement.scrollTop);d=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;c=e;e+=d;var h=b.getBoundingClientRect();h?(e=h.top-d,c=h.bottom):(h=l(a,b),d=h+b.offsetHeight,e=h-e,c=d-c);return e<=a.f&&0<=c+a.f}
+k.prototype.m=function(a){p(a);var b=this;window.setTimeout(function(){var d=a.getAttribute("data-pagespeed-lazy-src");if(d)if((b.h||m(b,a))&&-1!=a.src.indexOf(b.j)){var c=a.parentNode,e=a.nextSibling;c&&c.removeChild(a);a.c&&(a.getAttribute=a.c);a.removeAttribute("onload");a.tagName&&"IMG"==a.tagName&&g.CriticalImages&&f(a,"load",function(){g.CriticalImages.checkImageForCriticality(this);b.b&&(b.a--,b.a||g.CriticalImages.checkCriticalImages())});a.removeAttribute("data-pagespeed-lazy-src");a.removeAttribute("data-pagespeed-lazy-replaced-functions");
+c&&c.insertBefore(a,e);if(c=a.getAttribute("data-pagespeed-lazy-srcset"))a.srcset=c,a.removeAttribute("data-pagespeed-lazy-srcset");a.src=d}else b.g.push(a)},0)};k.prototype.loadIfVisibleAndMaybeBeacon=k.prototype.m;k.prototype.s=function(){this.h=!0;q(this)};k.prototype.loadAllImages=k.prototype.s;function q(a){var b=a.g,d=b.length;a.g=[];for(var c=0;c<d;++c)a.m(b[c])}function t(a,b){return a.a?null!=a.a(b):null!=a.getAttribute(b)}
+k.prototype.u=function(){for(var a=document.getElementsByTagName("img"),b=0,d;d=a[b];b++)t(d,"data-pagespeed-lazy-src")&&p(d)};k.prototype.overrideAttributeFunctions=k.prototype.u;function p(a){t(a,"data-pagespeed-lazy-replaced-functions")||(a.c=a.getAttribute,a.getAttribute=function(a){"src"==a.toLowerCase()&&t(this,"data-pagespeed-lazy-src")&&(a="data-pagespeed-lazy-src");return this.c(a)},a.setAttribute("data-pagespeed-lazy-replaced-functions","1"))}
+g.o=function(a,b){function d(){if(!(c.b&&a||c.i)){var b=200;200<(new Date).getTime()-c.l&&(b=0);c.i=window.setTimeout(function(){c.l=(new Date).getTime();q(c);c.i=null},b)}}var c=new k(b);g.lazyLoadImages=c;f(window,"load",function(){c.b=!0;c.h=a;c.f=200;if(g.CriticalImages){for(var b=0,d=document.getElementsByTagName("img"),r=0,n;n=d[r];r++)-1!=n.src.indexOf(c.j)&&t(n,"data-pagespeed-lazy-src")&&b++;c.a=b;c.a||g.CriticalImages.checkCriticalImages()}q(c)});b.indexOf("data")&&((new Image).src=b);f(window,
+"scroll",d);f(window,"resize",d)};g.lazyLoadInit=g.o;})();
+
+pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.gif");
+</script></head>
+<body>
+
+	<section id=s01>
+		<a href="#x" class="logo tac"><script data-pagespeed-no-defer>(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/ngx_pagespeed_beacon','http://it-titan.com/dev/tea/dist/','FcKm8oz36q',false,false,'kfgjf3l74ig');</script><img src="assets/img/logo_newtea.png.pagespeed.ce.A3BWEQuLp9.png" width=150 data-pagespeed-url-hash=1049800443 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+		<div class="cloud cloud3"><img src="assets/img/cloud_3.png.pagespeed.ce.0B2PEdnSwx.png" alt="" data-pagespeed-url-hash=2553997736 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+		<div class="cloud cloud2"><img src="assets/img/cloud_2.png.pagespeed.ce.tdbrQ26xZb.png" alt="" data-pagespeed-url-hash=2259497815 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+
+		<nav id=nav>
+			<div class="wrap flex aic">
+				<ul class="menu flex aic">
+					<li><a href="#s02" class=scrollto>Продукция</a></li>
+					<li><a href="#s03" class=scrollto>Преимущества</a></li>
+					<li><a href="#s04" class=scrollto>О Компании</a></li>
+					<li><a href="#s05" class=scrollto>Контакты</a></li>
+				</ul>
+				<div class="contacts flex aic tar">
+					<a class=phone href="tel:+7 (000) 000-00-00">+7 (000) <strong>000-00-00</strong></a>
+					<div class="messengeres flex aic">
+						<a href="#x"><img src="assets/img/WhatsApp.svg" width=25 alt="" data-pagespeed-url-hash=1759407440 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+						<a href="#x" class=viber><img src="assets/img/viber.svg" width=30 alt="" data-pagespeed-url-hash=1398579822 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+						<a href="#x"><img src="assets/img/Telegram_logo.svg" width=25 alt="" data-pagespeed-url-hash=879807315 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+					</div>
+					<a href="#x" class=btn onclick="popup(1)">Перезвоните мне</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="wrap flex aic">
+			<div class="left_side">
+				<h1><span>Ваш поставщик</span> чая</h1>
+				<a href="#s02" class="btn callToACtion scrollto">В каталог</a>
+			</div>
+			<div class=img><img src="assets/img/promo2.png.pagespeed.ce.DtBJjcPMmp.png" data-pagespeed-url-hash=2468603362 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+			<div class="cloud cloud1"><img src="assets/img/cloud_1.png.pagespeed.ce.V5KuzXRT_2.png" alt="" data-pagespeed-url-hash=1964997894 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+		</div>
+	</section>
+
+
+	<section id=s02>
+		<div class=wrap>
+			<h2>Продукция</h2>
+			<div class=goods>
+				<div class=good>
+					<h3>Safia green tea </h3>
+					<div class="flex jcsb fd">
+						<div class="left_side full_side">
+							<div class=img><img data-pagespeed-lazy-src="assets/img/good1.png.pagespeed.ce.YNDKKGo2iM.png" data-pagespeed-url-hash=1682806031 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+							<p class=desc>Крупный скрученный Цейлонский зеленый <strong>чай высшего сорта,</strong><br> имеющий тонкую горчинку и сладковатый вкус. </p>
+						</div>
+						<!-- /.left_side -->
+						<div class="right_side full_side">
+							<div class=img><img data-pagespeed-lazy-src="assets/img/cup1.jpg.pagespeed.ce.aAXm4L3ra5.jpg" data-pagespeed-url-hash=236819894 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+							<p class=desc>Safia green tea <strong>поможет успокоить и сосредоточить мысли.</strong></p>
+						</div>
+						<!-- /.right_side -->
+					</div>
+					<div class="tac getPrice"><a href="#x" class=btn onclick="popup(2)">Получить прайс-лист</a></div>
+				</div>
+				<!-- good -->
+
+				<div class=good>
+					<h3>Safia tea FBOP <small>( Flawory broken orange pekoe) </small></h3>
+					<div class="flex jcsb fd">
+						<div class="left_side full_side">
+							<div class=img><img data-pagespeed-lazy-src="assets/img/good4.png.pagespeed.ce.-luwEkei2y.png" data-pagespeed-url-hash=2566305794 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+							<p class=desc>В чае Safia FBOP собран исключительно <strong>чай летнего сбора</strong> (Fiush),<br> благодаря этому у него такой насыщенный и терпкий вкус.</p>
+						</div>
+						<!-- /.left_side -->
+						<div class="right_side full_side">
+							<div class=img><img data-pagespeed-lazy-src="assets/img/cup2.jpg.pagespeed.ce.NSlwLCNtU3.jpg" data-pagespeed-url-hash=531319815 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+							<p class=desc>Наличие в чае Safia FBOP типсов <strong>прекрасно тонизирует</strong><br> и позволяет почувствовать нежный и тонкий аромат чая.</p>
+						</div>
+						<!-- /.right_side -->
+					</div>
+					<div class="tac getPrice"><a href="#x" class=btn onclick="popup(2)">Получить прайс-лист</a></div>
+				</div>
+				<!-- good -->
+
+				<div class=good>
+					<h3>Safia fbop earl grey</h3>
+					<div class="flex jcsb fd">
+						<div class="left_side full_side">
+							<div class=img><img data-pagespeed-lazy-src="assets/img/good2.png.pagespeed.ce.hvTthhMOM2.png" data-pagespeed-url-hash=1977305952 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+							<p class=desc>Лист в данном чае  тот же что и в Safia fbop. </p>
+						</div>
+						<!-- /.left_side -->
+						<div class="right_side full_side">
+							<div class=img><img data-pagespeed-lazy-src="assets/img/cup5.jpg.pagespeed.ce.18iSCndfHG.jpg" data-pagespeed-url-hash=1414819578 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+							<p class=desc>Но он ароматизирован маслом бергамота, растения из семейства цитрусовых,<br> это придает чаю <strong>более интенсивный и бодрящий аромат.</strong></p>
+						</div>
+						<!-- /.right_side -->
+					</div>
+					<div class="tac getPrice"><a href="#x" class=btn onclick="popup(2)">Получить прайс-лист</a></div>
+				</div>
+				<!-- good -->
+
+				<div class=good>
+					<h3>Safia tea Pekoe</h3>
+					<div class="flex jcsb fd">
+						<div class="left_side full_side">
+							<div class=img><img data-pagespeed-lazy-src="assets/img/good3.png.pagespeed.ce.JNOgiOAoPA.png" data-pagespeed-url-hash=2271805873 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+							<p class=desc>Сорт Пекое в отличии от Fbop это <strong>более крупный и взрослый лист.</strong></p>
+						</div>
+						<!-- /.left_side -->
+						<div class="right_side full_side">
+							<div class=img><img data-pagespeed-lazy-src="assets/img/cup3.jpg.pagespeed.ce.RrRu9xpPZ8.jpg" data-pagespeed-url-hash=825819736 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+							<p class=desc>В Чае Сафия пекое <strong>меньше кофеина</strong> чем в сорте FBOP,<br> <strong>но больше тонина</strong> и дубильных веществ, что придают<br> чаю горечь, которая так нравится многим любителям чая.</p>
+						</div>
+						<!-- /.right_side -->
+					</div>
+					<div class="tac getPrice"><a href="#x" class=btn onclick="popup(2)">Получить прайс-лист</a></div>
+				</div>
+				<!-- good -->
+			</div>
+		</div>
+	</section>
+
+
+	<section id=s03>
+		<div class=wrap>
+			<h2>Наши преимущества</h2>
+
+			<div class=statistics-block>
+			<div class="statistics-item move_left animated">
+			  <div class="statistics-image-wrap statistics-year">
+			    <img data-pagespeed-lazy-src="assets/img/statistics_year.png.pagespeed.ce.MkKC_uOp5v.png" data-pagespeed-lazy-srcset="assets/img/shield.svg" alt=image width=99 data-pagespeed-url-hash=3990807420 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+			  </div>
+			  <!-- /.advantage-image-wrap -->
+			  <strong>
+			    10 <small>лет</small>
+			    <span class=shadow_effect>10<small>лет</small></span>
+			    <!-- /.shadow_effect -->
+			  </strong>
+			  <p>
+			    опыта, на протяжении которого мы никогда не экономили на качестве
+			  </p>
+			</div>
+			<!-- /.advantage-item -->
+			<div class="statistics-item move_left animated">
+			  <div class="statistics-image-wrap statistics-weight">
+			    <img data-pagespeed-lazy-src="assets/img/statistics_weight.png.pagespeed.ce.gJpJm3knif.png" data-pagespeed-lazy-srcset="assets/img/scale.svg" width=99 alt=image data-pagespeed-url-hash=1003658543 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+			  </div>
+			  <!-- /.advantage-image-wrap -->
+			  <strong>
+			    18                    <small>млн. кг</small>
+			    <span class=shadow_effect>
+			    18<small>млн. кг</small>
+			    </span>
+			    <!-- /.shadow_effect -->
+			  </strong>
+			  <p>
+			    чая расфасовано и отправленно нашим клиентам
+			  </p>
+			</div>
+			<!-- /.advantage-item -->
+			<div class="statistics-item move_right animated">
+			  <div class="statistics-image-wrap statistics-machine">
+			    <img data-pagespeed-lazy-src="assets/img/statistics_machine.png.pagespeed.ce.UJFsq6b3zn.png" data-pagespeed-lazy-srcset="assets/img/work-team.svg" width=99 alt=image data-pagespeed-url-hash=3058678226 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+			  </div>
+			  <!-- /.advantage-image-wrap -->
+			  <strong>
+			    48                    <span class=shadow_effect>
+			    48                    </span>
+			    <!-- /.shadow_effect -->
+			  </strong>
+			  <p>
+			    профессионалов работают для того, что-бы вы получили чай высочайшего качество по отличной цене
+			  </p>
+			</div>
+			<!-- /.advantage-item -->
+			<div class="statistics-item move_right animated">
+			  <div class="statistics-image-wrap statistics-service">
+			    <img data-pagespeed-lazy-src="assets/img/statistics_service.png.pagespeed.ce.qIdpSC7UHV.png" data-pagespeed-lazy-srcset="assets/img/support.svg" alt=image data-pagespeed-url-hash=2676627564 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+			  </div>
+			  <!-- /.advantage-image-wrap -->
+			  <strong>
+			    10 795                    <span class=shadow_effect>
+			    10 795                    </span>
+			    <!-- /.shadow_effect -->
+			  </strong>
+			  <p>
+			    клиентов и партнеров по всей России и миру
+			  </p>
+			</div>
+			<!-- /.advantage-item -->
+			</div>
+		</div>
+	</section>
+
+
+	<section id=s04>
+		<div class=wrap>
+			<h2>О компании</h2>
+			<div class=flex>
+				<div class=text>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. </p>
+				</div>
+				<div class=img><img data-pagespeed-lazy-src="assets/img/plantation.jpg.pagespeed.ce.62xwRAAyBZ.jpg" data-pagespeed-url-hash=3594338897 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id=s05>
+		<div class="wrap flex aic">
+			<div class=map>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A246a8f1c48c529baf041b2fdce9103a27065cfc7e17d5c9908d969b640f98eb1&amp;source=constructor" width="100%" height="100%" frameborder=0></iframe>
+			</div>
+			<div class=contacts>
+				<h2>Контакты</h2>
+				<p class=opacity>Адрес:</p>
+				<p>г. Москва, <br> Ленинградское шоссе, 25</p>
+				<p class="opacity mt2">Телефон</p>
+				<a class=phone href="tel:+7 (000) 000-00-00">+7 (000) <strong>000-00-00</strong></a>
+				<p class="opacity mt2">Электронная почта</p>
+				<a href="mailto:mail@gmail.com">mail@gmail.com</a>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<footer id=footer>
+		<div class="wrap flex">
+			<p class=address>г. Москва, <br> Ленинградское шоссе, 25</p>
+			<!-- <div class="logo">
+				<div class="img"><img src="assets/img/logo_newtea.png"></div>
+			</div> -->
+			<p class="right tac">&copy; Safia Tea Все права защищены</p>
+			<div class=tar><a class=phone href="tel:+7 (000) 000-00-00">+7 (000) <strong>000-00-00</strong></a></div>
+		</div>
+	</footer>
+
+	<div class=popup-bg id=popup-bg>
+
+	    <div class=popup id=popup1>
+	        <div class=head>
+	            <div class=close onclick="popup(-1)">&times;</div>
+	            <p><span>Н</span>апишите номе<span>р</span></p>
+	        </div>
+	        <div class=content>
+	            <p>и мы свяжемся с Вами в ближайшее время</p>
+	            <form action=spasibo.php.php method=post>
+	                <input type=tel name=tel required="" placeholder="+7 (000) 000-00-00">
+	                <input type=hidden name=comment value="Обратный звонок">
+	                <input type=submit class=btn value="Жду звонка">
+	            </form>
+	        </div>
+	    </div>
+
+	    <div class=popup id=popup2>
+	        <div class=head>
+	            <div class=close onclick="popup(-1)">&times;</div>
+	            <p>Заполните форму</p>
+	        </div>
+	        <div class=content>
+	            <p>и мы вышлем прайс-лист на Ваш E-mail</p>
+	            <form action=spasibo.php.php method=post>
+	                <input type=tel name=tel required="" placeholder="+7 (000) 000-00-00">
+	                <input type=email name=email required="" placeholder="Ваш Email">
+	                <input type=hidden name=comment value="Получить прайс">
+	                <input type=submit class=btn value="Получить прайс">
+	            </form>
+	        </div>
+	    </div>
+	</div>
+
+
+	<script type="text/javascript" data-pagespeed-no-defer>pagespeed.lazyLoadImages.overrideAttributeFunctions();</script><script src="assets/js/index.min.js"></script>
+	<script src="assets/js/enllax.js.pagespeed.jm.vW-MDNvQIG.js"></script>
+	<script type="text/javascript">
+	(function($) {
+    $(window).enllax();
+})(jQuery);
+$("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({
+        scrollTop: destination
+    }, 500);
+    return false;
+});
+window.onload = function() {
+    document.getElementById('popup-bg').onclick = function(e) {
+        if (e.target != this) {
+            return true;
+        }
+        popup(-1);
+    }
+}
+
+function popup(nm) {
+    popupElm = document.getElementById("popup-bg");
+    if (nm == -1) {
+        popupElm.classList.remove('visible');
+        document.querySelector('body').style.overflow = 'auto';
+    } else {
+        elm = popupElm.getElementsByClassName('popup');
+        if (typeof nm != 'undefined')
+            for (var i = elm.length - 1; i >= 0; i--) {
+                if (elm[i].id == 'popup' + nm) {
+                    elm[i].classList.add('visible');
+                    popupElm.classList.add('visible');
+                    document.querySelector('body').style.overflow = 'hidden';
+                } else {
+                    elm[i].classList.remove('visible');
+                }
+            } else {
+                popupElm.classList.add('visible');
+                document.querySelector('body').style.overflow = 'hidden';
+            }
+    }
+}
+$(window).scroll(function() {
+    $('.move_left').each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+300) {
+        $(this).addClass('bounceInLeft mv');
+      }
+    });
+		$('.move_right').each(function(){
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+300) {
+				$(this).addClass('bounceInRight mv');
+			}
+		});
+  });
+</script>
+</body>
 </html>
