@@ -13,16 +13,35 @@
     font-size: 24px !important;
   }
   #s02{
-    background-image: url(leaves.png);
-    background-size: 10px;
-    background-position: 0 0;
-    background-repeat: repeat;
+    background: #f6ece5 url(../img/leaves.png) 0 0 repeat;
+    background-attachment: fixed;
+  }
+  #s03{
+    background: url(../img/waves.png) 0 0 repeat;
+  }
+  #s04{
+    background: url(../img/waves.png) 0 0 repeat;
+  }
+  #s05{
+    background: url(../img/lines.png) 0 0 repeat;
+    background-attachment: fixed;
   }
 .move_left, .move_right{
   opacity: 0;
+  filter: grayscale(100%);
 }
 .mv{
   opacity: 1;
+  filter: grayscale(0);
+}
+.gimage{
+  transition: 0.25s all;
+}
+.gimage:hover{
+  transform: scale(1.05);
+}
+.circimg{
+  border-radius: 10000px;
 }
 /*End of Sharapudin's job*/
 html {
