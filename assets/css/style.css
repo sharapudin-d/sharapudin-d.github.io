@@ -43,6 +43,49 @@
 .circimg{
   border-radius: 10000px;
 }
+#s04 .wrap .flex .text p{
+    font-size: 24px;
+}
+#s04 .wrap .flex .img{
+  width: 100%;
+  text-align: center;
+}
+.center{
+  text-align: center;
+}
+.imgab{
+  width: 50%;
+  border-radius: 7px;
+}
+.call{
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  background-color: #599141;
+  opacity: 0.8;
+  border-radius: 100px;
+  z-index: 2;
+  transition: .25s;
+}
+.call:hover{
+  transform: scale(1.05);
+  opacity: 0.7;
+}
+.call:active{
+  transform: scale(0.95);
+  opacity: 1;
+}
+.callimg{
+  width: 100%;
+  transform-origin: center;
+  transform: scale(0.7);
+}
+.contact{
+  margin-bottom: 60px;
+}
 /*End of Sharapudin's job*/
 html {
     font-family: sans-serif;
@@ -1809,15 +1852,15 @@ h2 {
 }
 
 #s04 p {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.4;
     margin-top: 10px
 }
-
+/*Sharapudin's
 #s04 .text {
     padding-right: 50px
 }
-
+*/
 #s04 .img {
     width: 40%;
     -ms-flex-negative: 0;
@@ -1832,7 +1875,7 @@ h2 {
 
 #s05 .contacts {
     padding-left: 50px;
-    font-size: 18px
+    font-size: 24px
 }
 
 #s05 .contacts a {
@@ -1845,7 +1888,7 @@ h2 {
 
 #s05 .opacity {
     font-family: Roboto Slab, serif;
-    color: #ccc
+    color: #aaa
 }
 
 #footer {
