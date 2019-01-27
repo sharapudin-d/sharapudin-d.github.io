@@ -65,7 +65,7 @@
 }
 #s04 .wrap .flex .text{
   margin-top: 50px;
-  padding-left: 250px;
+  padding-left: 225px;
   padding-right: 175px;
 }
 #s04 .wrap .flex .img{
@@ -76,7 +76,7 @@
   text-align: center;
 }
 .imgab{
-  width: 50%;
+  width: 62%;
   border-radius: 7px;
 }
 .call{
@@ -112,6 +112,7 @@
   font-size: 26px;
 }
 .contact h2{
+  text-align: left;
   margin-bottom: 100px;
 }
 .map{
