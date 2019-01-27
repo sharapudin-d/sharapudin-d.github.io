@@ -4,8 +4,7 @@
 	<meta charset=utf-8>
 	<meta http-equiv=X-UA-Compatible content="IE=edge">
 	<meta name=viewport content="width=1260,  maximum-scale=1, user-scalable=yes">
-	<title> Safia Tea - Ваш поставщик чая </title>
-	<script src="https://unpkg.com/eva-icons"></script>
+	<title> Safia Tea - Чай, которым гордится цейлон </title>
 	<link rel=stylesheet href="assets/css/animate.css">
 	<link rel=stylesheet href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700&amp;subset=cyrillic" rel=stylesheet>
@@ -44,18 +43,16 @@ pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.gif");
 				<div class="contacts flex aic tar">
 					<a class=phone href="tel:+7 (800) 700-40-77">+7 (800) 700-40-77</a>
 					<div class="messengeres flex aic">
-						<a href="#x"><img src="assets/img/WhatsApp.svg" width=25 alt="" data-pagespeed-url-hash=1759407440 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-						<a href="#x" class=viber><img src="assets/img/viber.svg" width=30 alt="" data-pagespeed-url-hash=1398579822 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-						<a href="#x"><img src="assets/img/Telegram_logo.svg" width=25 alt="" data-pagespeed-url-hash=879807315 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+						<a class="insta" href="https://instagram.com/safia_tea"><img src="assets/img/instagram.svg" width=25 alt="" data-pagespeed-url-hash=1759407440 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
 					</div>
-					<a href="#" class=btn onclick="popup(1)">Перезвоните нам</a>
+					<a class=btn onclick="popup(1)">Перезвоните нам</a>
 				</div>
 			</div>
 		</nav>
 
 		<div class="wrap flex aic">
 			<div class="left_side">
-				<h1><span>Ваш поставщик</span> чая</h1>
+				<h1 class="mainh1"><span>Чай, которым </span><br> гордится цейлон</h1>
 				<a href="#s02" class="btn callToACtion scrollto">В каталог</a>
 			</div>
 			<div class=img><img src="assets/img/promo2.png.pagespeed.ce.DtBJjcPMmp.png" data-pagespeed-url-hash=2468603362 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
@@ -346,14 +343,17 @@ function popup(nm) {
             }
     }
 }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
 $(window).scroll(function() {
-    $('.move_left').each(function(){
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+1200) {
-        $(this).addClass('bounceInLeft mv');
-      }
-    });
+		$('.move_left').each(function(){
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+1200) {
+				$(this).addClass('bounceInLeft mv');
+			}
+		});
 		$('.move_right').each(function(){
 			var imagePos = $(this).offset().top;
 			var topOfWindow = $(window).scrollTop();
@@ -361,7 +361,8 @@ $(window).scroll(function() {
 				$(this).addClass('bounceInRight mv');
 			}
 		});
-  });
+	});
+
 </script>
 </body>
 </html>

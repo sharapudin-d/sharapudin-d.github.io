@@ -1,6 +1,22 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /*New by Sharapudin*/
+  .mainh1{
+    font-size: 1.75em !important;
+    margin-right: 50px;
+  }
+  .insta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px
+    transform: scale(0.75);
+    padding: 0;
+  }
+  .insta img{
+    transform: scale(0.8);
+    filter: invert(75%);
+  }
   .fd{
     flex-direction: column;
   }
@@ -38,7 +54,7 @@
   transition: 0.25s all;
 }
 .gimage:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .circimg{
   border-radius: 10000px;
