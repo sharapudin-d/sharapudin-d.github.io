@@ -60,7 +60,13 @@
   border-radius: 10000px;
 }
 #s04 .wrap .flex .text p{
-    font-size: 24px;
+    text-align: left;
+    font-size: 26px;
+}
+#s04 .wrap .flex .text{
+  margin-top: 50px;
+  padding-left: 250px;
+  padding-right: 175px;
 }
 #s04 .wrap .flex .img{
   width: 100%;
@@ -100,7 +106,16 @@
   transform: scale(0.7);
 }
 .contact{
-  margin-bottom: 60px;
+  margin-left: 60px;
+}
+.contact a, .contact p{
+  font-size: 26px;
+}
+.contact h2{
+  margin-bottom: 100px;
+}
+.map{
+  margin-left: 75px;
 }
 /*End of Sharapudin's job*/
 html {
