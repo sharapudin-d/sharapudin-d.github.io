@@ -85,6 +85,10 @@ h2{
   font-size: 2em;
   color: #fff;
 }
+.third_panel .slider{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .slider *{
   outline: none;
 }
