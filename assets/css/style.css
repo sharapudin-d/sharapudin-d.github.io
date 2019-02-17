@@ -85,7 +85,7 @@ h2{
   font-size: 2em;
   color: #fff;
 }
-.third_panel .slider{
+.third_panel .line{
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -121,5 +121,23 @@ h2{
   }
   .second_panel{
     margin-top: 25px;
+  }
+  .third_panel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .third_panel .line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .slide{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .slide img{
+    transform: scale(0.9);
+  }
+  .slick-center img{
+    transform: scale(1);
   }
 }
