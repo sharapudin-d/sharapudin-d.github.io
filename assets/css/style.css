@@ -6,8 +6,13 @@ body{
 }
 h1{
   text-align: center;
+  font-size: 2em;
 }
 h2{
+  text-align: center;
+  font-size: 1.5em;
+}
+small{
   text-align: center;
 }
 .first_panel{
@@ -106,7 +111,7 @@ h2{
 .slick-center img{
   transform: scale(1);
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .logo{
     width: 35%;
     padding: 1.5%;
@@ -123,8 +128,8 @@ h2{
     margin-top: 25px;
   }
   .third_panel{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
   .third_panel .line{
     margin-top: 10px;
@@ -139,5 +144,13 @@ h2{
   }
   .slick-center img{
     transform: scale(1);
+  }
+  h1{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  h2{
+    text-align: center;
+    font-size: 1.25em;
   }
 }
