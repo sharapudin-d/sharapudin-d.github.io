@@ -2,129 +2,67 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unium</title>
-    <link rel="stylesheet" href="assets/slick/slick.css">
-  	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="assets/css/googlesans.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOTEL</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,700|Poiret+One&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <div class="first_panel fdc">
-      <div class="line sb">
-        <div class="logo"><img src="assets/img/logo.svg" alt=""></div>
+    <img src="assets/img/hotel.jpg" class="bg_img" alt="">
+    <section class="page_start">
+      <h1>ОТЕЛЬ ВОЯЖ</h1>
+    </section>
+    <section class="page_products">
+        <h2>Наши Услуги</h2>
+      <div class="gallery">
+        <div class="gallery_col">
+          <img src="assets/img/nomer1.jpg" alt="">
+          <img src="assets/img/nomer2.jpg" alt="">
+          <img src="assets/img/photo1.jpg" alt="">
       </div>
-    </div>
-    <div class="second_panel fdc">
-      <h1>Образовательный центр <br> Юниум</h1>
-      <small>Выберите возраст</small>
-      <div class="line sa">
-        <div class="course c1">
-          <div class="line jcc">
-            Дошк.
+      <div class="gallery_col"></div>
+      <div class="gallery_col"></div>
+    </section>
+
+    <section class="page_advantages">
+      <h2>Наши преимущества</h2>
+      <div class="advantages">
+        <div class="adv">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="page_contacts">
+      <h2>Контакты</h2>
+      <div class="ct_col ct_col1">
+        <div class="ct_side">
+          <h3>Мессенджеры и соц. сети:</h3>
+          <div class="chat_wrapper">
+            <a href="" class="chat_link walink"><i class="fab fa-whatsapp"></i></a>
+            <a href="" class="chat_link tglink"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://www.instagram.com/voyage_hotel05/" class="chat_link ilink"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        <div class="course c2 active_course">
-          <div class="line jcc">
-            1-4кл
-          </div>
-        </div>
-        <div class="course c3">
-          <div class="line jcc">
-            5-8кл
-          </div>
-        </div>
-        <div class="course c4">
-          <div class="line jcc">
-            9-11кл
-          </div>
+        <div class="ct_side">
+          <h3>Телефон и почта:</h3>
+          <a href="tel:+7896575757" class="tel_link"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;8 989 657-57-57</a>
+          <a href="mailto:exam.ple@mail.com" class="tel_link"><i class="fas fa-envelope faicon"></i>&nbsp;&nbsp;exam.ple@mail.com</a>
         </div>
       </div>
-    </div>
-    <div class="third_panel fdc">
-      <h2>Курсы</h2>
-      <div class="line jcc">
-        <div class="slider">
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
+      <div class="ct_col">
+        <h3>Адрес:</h3>
+        <div id="mapwrapper">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa78e9031b02fa7637f5ed4a3a34ecbf7b9ab634b099c2d7df2290164a67cb29b&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
       </div>
-      <div class="line jcc">
-        <div class="slider">
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-        </div>
-      </div>
-      <div class="line jcc">
-        <div class="slider">
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-          <div class="slide"><img src="assets/img/testcontent.svg" alt=""></div>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="assets/js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(".c1").click(function() {
-        $(".course").removeClass("active_course");
-        $(".c1").addClass("active_course");
-      });
-      $(".c2").click(function() {
-        $(".course").removeClass("active_course");
-        $(".c2").addClass("active_course");
-      });
-      $(".c3").click(function() {
-        $(".course").removeClass("active_course");
-        $(".c3").addClass("active_course");
-      });
-      $(".c4").click(function() {
-        $(".course").removeClass("active_course");
-        $(".c4").addClass("active_course");
-      });
-    </script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
-    <script type="text/javascript">
-    $('.slider').slick({
-centerMode: true,
-centerPadding: '60px',
-dots: false,
-arrows: false,
-slidesToShow: 1,
-infinite: false,
-responsive: [
-  {
-    breakpoint: 768,
-    settings: {
-      arrows: false,
-      centerMode: true,
-      centerPadding: '40px',
-      slidesToShow: 1
-    }
-  },
-  {
-    breakpoint: 480,
-    settings: {
-      arrows: false,
-      centerMode: true,
-      centerPadding: '40px',
-      slidesToShow: 1
-    }
-  }
-]
-});
-    </script>
+    </section>
+
+    <footer class="footer">
+      &copy; Отель Вояж
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src=assets/js/script.js></script>
   </body>
 </html>
