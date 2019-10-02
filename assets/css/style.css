@@ -8,6 +8,7 @@ html{
 a{
   color: inherit;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 *{
   box-sizing: border-box;
@@ -74,14 +75,37 @@ section{
   justify-content: space-between;
   width: 100%;
 }
-.gallery_col > img{
-  width: 30%;
+.gallery_img{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  width: 28vw;
+  height: 21vw;
+  background-size: cover;
+  overflow: hidden;
+  color: rgba(255,255,255,.85);
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), inset 0 -300px 5px rgba(0, 0, 0, 0.5);
   transition: .25s;
   cursor: pointer;
 }
-.gallery_col > img:hover{
+.gallery_img > h3{
+  display: inline;
+  margin: 0;
+  line-height: 1;
+}
+.gallery_img > p{
+  display: inline;
+  margin: 0;
+  line-height: 1;
+  font-size: .9rem;
+}
+.gi1{
+  background-image: url(../img/nomer1.jpg);
+}
+.gallery_img:hover{
   transform: scale(1.025);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
 }
@@ -147,7 +171,7 @@ section{
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: .25s;
 }
 .tel_link:hover{
@@ -180,6 +204,10 @@ section{
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+  .gallery_img{
+    width: 100%;
+    height: 60vw;
   }
   .ct_col1{
     flex-direction: column;
