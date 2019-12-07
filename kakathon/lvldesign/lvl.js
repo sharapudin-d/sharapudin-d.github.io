@@ -1,5 +1,6 @@
 window.onload = function() {
-  var ls = localStorage;
+  var ls = localStorage,
+  current = ls.getItem('current');
   var line, block;
   for(let i=1;i<=10;i++){
     line = '<div class="line l'+i+'" lnum="'+i+'"></div>';
@@ -11,13 +12,14 @@ window.onload = function() {
   }
   for(let i=1;i<=10;i++){
     for(let p=1;p<=10;p++){
-      if(ls.getItem('('+p+';'+i+')')=='1'){
+      let bl_ver = current + '('+p+';'+i+')';
+      if(ls.getItem(bl_ver)=='1'){
         $('#b_'+p+'_'+i).addClass('wall');
       }
-      else if(ls.getItem('('+p+';'+i+')')=='2'){
+      else if(ls.getItem(bl_ver)=='2'){
         $('#b_'+p+'_'+i).addClass('player');
       }
-      else if(ls.getItem('('+p+';'+i+')')=='3'){
+      else if(ls.getItem(bl_ver)=='3'){
         $('#b_'+p+'_'+i).addClass('finish');
       }
     }
@@ -35,38 +37,40 @@ window.onload = function() {
     console.log(str);
     x = str[1];
     y = str[2];
+    var bl_get = current + '('+x+';'+y+')';
+    console.log(current);
     id = '#b_'+x+'_'+y;
     console.log(id);
     console.log(x+'\n'+y);
     $('.choose').removeClass('scale0');
     $('.block').addClass('scale0');
     $('#none').click(function() {
-      if(ls.getItem('('+x+';'+y+')')){
-        ls.removeItem('('+x+';'+y+')');
+      if(ls.getItem(bl_get)){
+        ls.removeItem(bl_get);
         $(id).removeClass('wall finish player');
       }
     });
     $('#wall').click(function() {
-      ls.setItem('('+x+';'+y+')','1');
+      ls.setItem(bl_get,'1');
       $(id).removeClass('finish player');
       $(id).addClass('wall');
     });
     $('#finish').click(function() {
       nf = ls.getItem('finish')
-      ls.setItem('('+x+';'+y+')','3');
+      ls.setItem(bl_get,'3');
       $('.finish').removeClass('finish');
       $(id).removeClass('wall player');
       $(id).addClass('finish');
-      ls.setItem('finish','('+x+';'+y+')')
+      ls.setItem('finish',bl_get)
     });
     $('#player').click(function() {
       np = ls.getItem('player')
-      ls.setItem('('+x+';'+y+')','2');
+      ls.setItem(bl_get,'2');
       ls.removeItem(np);
       $('.player').removeClass('player');
       $(id).removeClass('wall finish');
       $(id).addClass('player');
-      ls.setItem('player','('+x+';'+y+')')
+      ls.setItem('player',bl_get)
     });
     $('.choose > div').click(function() {
       $('.choose').addClass('scale0');

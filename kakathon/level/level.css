@@ -118,3 +118,6 @@ body{
   background: #1289ab;
   color: #fff;
 }
+.curr_link > .lbutts > .current_button{
+  color: #00cc78;
+}

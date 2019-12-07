@@ -1,3 +1,4 @@
+var alg = '', current = localStorage.getItem('current');
 window.onload = function() {
 var ls = localStorage;
 for(let i=1;i<=10;i++){
@@ -10,19 +11,19 @@ for(let i=1;i<=10;i++){
 }
 for(let i=1;i<=10;i++){
   for(let p=1;p<=10;p++){
-    if(ls.getItem('('+p+';'+i+')')=='1'){
+    let bl_get = ls.getItem(current + '('+p+';'+i+')');
+    if(bl_get=='1'){
       $('#b_'+p+'_'+i).addClass('wall');
     }
-    else if(ls.getItem('('+p+';'+i+')')=='2'){
+    else if(bl_get=='2'){
       $('#b_'+p+'_'+i).addClass('player');
     }
-    else if(ls.getItem('('+p+';'+i+')')=='3'){
+    else if(bl_get=='3'){
       $('#b_'+p+'_'+i).addClass('finish');
     }
   }
 }
 }
-var alg = '';
 function find_block(cl,block) {
   var sp = cl.split(' '),
   res = 0;
@@ -100,10 +101,12 @@ function end(){
   }
 }
 $('.play_button').click(function() {
-  var ex,code,start,end;
-  if(localStorage.getItem('donut_code')){
-    console.log(localStorage.getItem('donut_code'));
-    code = localStorage.getItem('donut_code');
+  var ex,code,start,end,codeid;
+  codeid = current + 'donut_code'
+  console.log(codeid);
+  if(localStorage.getItem(codeid)){
+    console.log(localStorage.getItem(codeid));
+    code = localStorage.getItem(codeid);
   }
   else{
     code = '';
