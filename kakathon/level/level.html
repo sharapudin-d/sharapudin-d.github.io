@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Space+Mono&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="level.css">
+  </head>
+  <body>
+    <section class="levels">
+
+    </section>
+    <div class="confirm">
+      <h3>Input level name</h3>
+      <input type="text" id="level_name" class="input" name="" value="">
+      <div class="butts">
+        <button type="button" class="add_button" onclick="hideInput()">Cancel</button>
+        <button type="button" class="add_button" onclick="add()">Ok</button>
+      </div>
+    </div>
+    <div class="add" onclick="showInput()">
+      <i class="fas fa-plus"></i>
+    </div>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="level.js"></script>
+  </body>
+</html>

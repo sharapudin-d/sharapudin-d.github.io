@@ -1,0 +1,100 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: #204567;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.add_elem{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  border: none;
+  outline: none;
+  padding: 1.5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: inherit;
+  font-weight: 600;
+  transition: .5s;
+  background: #1289ab;
+  color: #fff;
+  cursor: pointer;
+}
+.add_elem:hover{
+  background: #fff;
+  color: #1289ab;
+}
+.level{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1%;
+}
+.line{
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  margin-top: .3vw;
+}
+.block{
+  width: 4.25vw;
+  height: 4.25vw;
+  border-radius: 6px;
+  background: #fff;
+  opacity: 0.65;
+  cursor: pointer;
+  transition: .25s;
+}
+.block:hover{
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+.choose{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 30%;
+  left: 25%; top: 35%;
+  background: #1289ab;
+  color: #fff;
+  z-index: 10;
+  opacity: 1;
+  transition: .5s;
+}
+.choose > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: .25s;
+}
+.choose > div:hover{
+  background: rgba(0, 0, 0, 0.1);
+}
+.scale0{
+  opacity: 0;
+  transform: scale(0);
+}
+.wall{
+  background-image: url('wall.png');
+  background-size: 150%;
+  background-position: center;
+}
+.player{
+  background: none;
+  background-image: url('donut.png');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.finish{
+  background-image: url('finish.svg');
+  background-size: cover;
+}
