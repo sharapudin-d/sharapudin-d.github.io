@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   padding: 0;
   margin: 0;
@@ -20,7 +23,7 @@ body{
   color: #fff;
   cursor: pointer;
 }
-.add_elem:hover{
+.nav_button:hover, .nav_button:focus{
   background: #fff;
   color: #1289ab;
 }
@@ -123,7 +126,4 @@ body{
   background: transparent;
   cursor: pointer;
   transition: .25s;
-}
-.nav_button:hover, .nav_button:focus{
-  background: rgba(0, 0, 0, 0.1);
 }

@@ -2,6 +2,7 @@ var current = localStorage.getItem('current');
 window.onload = function() {
   function anime() {
     $('.scale0').removeClass('scale0');
+    $('.info, .times_button').addClass('scale0');
   }
   setTimeout(anime, 50);
   var current = localStorage.getItem('current');
@@ -23,6 +24,18 @@ function hideSave() {
 function link(l) {
   document.location.href = l;
 }
+$('.info_button').click(function() {
+  $('.info_button').addClass('scale0');
+  $('.times_button').removeClass('scale0');
+  $('.main_content').addClass('scale0');
+  $('.info').removeClass('scale0');
+});
+$('.times_button').click(function() {
+  $('.info_button').removeClass('scale0');
+  $('.times_button').addClass('scale0');
+  $('.main_content').removeClass('scale0');
+  $('.info').addClass('scale0');
+});
 $("#code").keydown(function(event){
   if( event.keyCode !== 9 )
     return;

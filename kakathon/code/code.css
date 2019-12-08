@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 2.5%;
@@ -15,6 +18,10 @@ textarea{
   justify-content: center;
   align-items: center;
   transition: 1s;
+}
+.scale0{
+  transform: scale(0);
+  opacity: 0;
 }
 #code{
   border: none;
@@ -61,7 +68,7 @@ textarea{
   font-family: inherit;
   font-weight: 600;
 }
-.button:hover, .button:focus{
+.button:hover, .button:focus, .nav_button:hover, .nav_button:focus, .ib:focus, .ib:hover{
   color: #1289ab;
   background: #fff;
 }
@@ -88,7 +95,7 @@ textarea{
   display: flex;
   position: fixed;
   left: 35%;
-  bottom: 5%;
+  bottom: 2%;
   justify-content: space-around;
   width: 30vw;
   height: 5.5vw;
@@ -109,6 +116,35 @@ textarea{
   cursor: pointer;
   transition: .25s;
 }
-.nav_button:hover, .nav_button:focus{
-  background: rgba(0, 0, 0, 0.1);
+.ib{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  border: none;
+  outline: none;
+  font-size: 2em;
+  width: 5.5vw;
+  height: 5.5vw;
+  background: #1289ab;
+  color: #fff;
+  cursor: pointer;
+  transition: .4s;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 30%; top: 15%;
+  padding: 4%;
+  padding-top: 0;
+  width: 40%;
+  height: 50%;
+  background: #1289ab;
+  color: #fff;
+  transition: .4s;
 }

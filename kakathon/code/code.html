@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="code.css">
   </head>
   <body>
-    <section class="main_content">
+    <section class="main_content scale0">
       <textarea name="name" id="code" rows="8" cols="80"></textarea>
       <div class="butts">
         <button type="button" class="button scale0" onclick="save()"><i class="fas fa-save"></i></button>
@@ -22,6 +22,12 @@
        <button class="nav_button" onclick="link('../lvldesign/lvl.html')"><i class="fas fa-pencil-ruler"></i></button>
        <button class="nav_button" onclick="link('../play/play.html')"><i class="fas fa-gamepad"></i></button>
     </nav>
+    <div class="info scale0">
+      <h3>Functions:</h3>
+      Up(), Down(), Left(), Right(), is_wall(//experimental)
+    </div>
+    <button type="button" name="button" class="info_button ib scale0"><i class="fas fa-info "></i></button>
+    <button type="button" name="button" class="info_button ib times_button scale0"><i class="fas fa-times"></i></button>
     <script type="text/javascript" src="../jquery.js"></script>
     <script type="text/javascript" src="code.js"></script>
     <script type="text/javascript" id="exec"></script>

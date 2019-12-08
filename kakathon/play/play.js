@@ -41,8 +41,6 @@ function find_block(cl,block) {
   return res
 }
 function img_move(dir) {
-  console.log($('.player').attr('id'));
-  console.log('Direction: '+dir);
   var str = $('.player').attr('id').split('_'),
   x = +str[1],
   y = +str[2];
@@ -88,22 +86,59 @@ function img_move(dir) {
     $('.victory').removeClass('scale0');
   }
 }
-// function is_wall(dir) {
-//     switch (dir) {
-//       case 'up':
-//
-//         break;
-//       case 'dow':
-//
-//         break;
-//       case :
-//
-//         break;
-//       case :
-//
-//         break;
-//     }
-// }
+function is_wall(dir) {
+  var str = $('.player').attr('id').split('_'),
+  x = +str[1],
+  y = +str[2];
+  switch (dir) {
+    case 'up':
+      var id = '#b_'+x+'_'+(y-1),
+      data = $(id).attr('class'),
+      id_ver = find_block(data,'wall');
+      if (id_ver == 1) {
+        return true
+      }
+      else {
+        return false
+      }
+      break;
+    case 'down':
+      var id = '#b_'+x+'_'+(y+1),
+      data = $(id).attr('class'),
+      id_ver = find_block(data,'wall');
+      if (id_ver == 1) {
+        return true
+      }
+      else {
+        return false
+      }
+      break;
+    case 'right':
+      var id = '#b_'+(x+1)+'_'+y,
+      data = $(id).attr('class'),
+      id_ver = find_block(data,'wall');
+      if (id_ver == 1) {
+        return true
+      }
+      else {
+        return false
+      }
+      break;
+    case 'left':
+      var id = '#b_'+(x-1)+'_'+y,
+      data = $(id).attr('class'),
+      id_ver = find_block(data,'wall');
+      if (id_ver == 1) {
+        return true
+      }
+      else {
+        return false
+      }
+      break;
+    default:
+      alert('Wrong direction argument of function is_wall()');
+  }
+}
 function Up(p=1){
   for(i=0;i<p;i++){
     alg+='u_';
@@ -127,8 +162,10 @@ function Right(p=1) {
 function end(){
   alg = alg.split('_');
   for(let i=0;i<alg.length-1;i++){
-      setTimeout(img_move,i*450,alg[i]);
+      setTimeout(img_move,i*400,alg[i]);
   }
+  var timer = alg.length*400;
+  $('.timer').append(timer + ' ms');
 }
 function link(l) {
   document.location.href = l;
@@ -136,7 +173,7 @@ function link(l) {
 $('.play_button').click(function() {
   var ex,code,start,end,codeid;
   codeid = current + 'donut_code'
-  console.log(codeid);
+  console.log(is_wall('right')!=true);
   if(localStorage.getItem(codeid)){
     console.log(localStorage.getItem(codeid));
     code = localStorage.getItem(codeid);
@@ -145,8 +182,8 @@ $('.play_button').click(function() {
     code = '';
   }
   ex = document.getElementById('exec');
-  start = 'function Main(){'
-    end = '\nend();}setTimeout(Main, 500);';
+  start = 'function Main(){\n const st = new Date().getTime();\n'
+    end = '\n end();} \n setTimeout(Main, 500);';
   ex.innerHTML = start + code + end;
   $('.play_button').addClass('scale0');
   $('.restart_button').removeClass('scale0');

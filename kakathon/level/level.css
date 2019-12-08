@@ -90,7 +90,7 @@ body{
   font-weight: 600;
   outline: none;
 }
-.add_button:hover, .add_button:focus, .l_button:hover, .l_button:focus{
+.add_button:hover, .add_button:focus, .l_button:hover, .l_button:focus, .nav_button:hover, .nav_button:focus{
   color: #204567;
   background: #fff;
 }
@@ -146,7 +146,4 @@ body{
   background: transparent;
   cursor: pointer;
   transition: .25s;
-}
-.nav_button:hover, .nav_button:focus{
-  background: rgba(0, 0, 0, 0.1);
 }
