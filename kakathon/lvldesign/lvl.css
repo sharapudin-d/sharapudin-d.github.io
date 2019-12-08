@@ -7,23 +7,23 @@ body{
   background: #204567;
   font-family: 'Montserrat', sans-serif;
 }
-.add_elem{
+.del_all{
   position: fixed;
-  right: 5%;
-  bottom: 5%;
+  right: 2%;
+  bottom: 2%;
   border: none;
   outline: none;
-  padding: 1.5%;
-  padding-left: 4%;
-  padding-right: 4%;
+  width: 5.5vw;
+  height: 5.5vw;
+  font-size: 2em;
   font-family: inherit;
   font-weight: 600;
-  transition: .5s;
+  transition: .25s;
   background: #1289ab;
   color: #fff;
   cursor: pointer;
 }
-.nav_button:hover, .nav_button:focus{
+.nav_button:hover, .nav_button:focus, .del_all:focus, .del_all:hover{
   background: #fff;
   color: #1289ab;
 }

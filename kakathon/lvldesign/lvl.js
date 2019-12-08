@@ -77,6 +77,18 @@ window.onload = function() {
       setTimeout(ref,50);
     });
   });
+$('.del_all').click(function() {
+  for(let y=1;y<=10;y++){
+    for(let x=1;x<=10;x++){
+      var id1 = '#b_'+x+'_'+y;
+      ls.removeItem(current + '('+x+';'+y+')');
+      $(id1).removeClass('wall finish player');
+    }
+  }
+  ls.removeItem(current+'player');
+  ls.removeItem(current+'finish');
+  link('lvl.html');
+});
 }
 function link(l) {
   document.location.href = l;
