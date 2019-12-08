@@ -2,7 +2,7 @@ body{
   padding: 0;
   margin: 0;
   background: #204567;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .add_elem{
   position: fixed;
@@ -82,19 +82,48 @@ body{
   transform: scale(0);
 }
 .wall{
-  background-image: url('wall.png');
+  background-image: url('../img/wall.png');
   background-size: 150%;
   background-position: center;
 }
 .player{
   background: none;
-  background-image: url('donut.png');
+  background-image: url('../img/donut.png');
   background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
 }
 .finish{
-  background-image: url('finish.svg');
+  background-image: url('../img/finish.svg');
   background-size: cover;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 2%;
+  bottom: 20%;
+  justify-content: space-around;
+  width: 5.5vw;
+  height: 30vw;
+  background: #1289ab;
+  color: #fff;
+  transition: .4s;
+}
+.nav_button{
+  display: flex;
+  border: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  height: 30%;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: .25s;
+}
+.nav_button:hover, .nav_button:focus{
+  background: rgba(0, 0, 0, 0.1);
 }

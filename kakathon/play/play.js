@@ -1,11 +1,17 @@
 var alg = '', current = localStorage.getItem('current');
 window.onload = function() {
+function anime() {
+  $('.scale0').removeClass('scale0');
+  $('.restart_button').addClass('scale0');
+  $('.victory').addClass('scale0');
+}
+setTimeout(anime, 50);
 var ls = localStorage;
 for(let i=1;i<=10;i++){
   line = '<div class="line l'+i+'" lnum="'+i+'"></div>';
   $('.level').append(line);
   for(let p=1;p<=10;p++){
-    block = '<div class="block" id="b_'+p+'_'+i+'"></div>';
+    block = '<div class="block scale0" id="b_'+p+'_'+i+'"></div>';
     $('.l'+i).append(block);
   }
 }
@@ -82,23 +88,50 @@ function img_move(dir) {
     $('.victory').removeClass('scale0');
   }
 }
-function Up(){
-  alg+='u_'
+// function is_wall(dir) {
+//     switch (dir) {
+//       case 'up':
+//
+//         break;
+//       case 'dow':
+//
+//         break;
+//       case :
+//
+//         break;
+//       case :
+//
+//         break;
+//     }
+// }
+function Up(p=1){
+  for(i=0;i<p;i++){
+    alg+='u_';
+  }
 }
-function Down(){
-  alg+='d_'
+function Down(p=1){
+  for(i=0;i<p;i++){
+    alg+='d_';
+  }
 }
-function Left() {
-  alg+='l_'
+function Left(p=1) {
+  for(i=0;i<p;i++){
+    alg+='l_';
+  }
 }
-function Right() {
-  alg+='r_'
+function Right(p=1) {
+  for(i=0;i<p;i++){
+    alg+='r_';
+  }
 }
 function end(){
   alg = alg.split('_');
   for(let i=0;i<alg.length-1;i++){
-      setTimeout(img_move,i*500,alg[i]);
+      setTimeout(img_move,i*450,alg[i]);
   }
+}
+function link(l) {
+  document.location.href = l;
 }
 $('.play_button').click(function() {
   var ex,code,start,end,codeid;

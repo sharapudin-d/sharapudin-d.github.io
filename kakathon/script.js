@@ -1,1 +1,1 @@
-document.location.href = 'lvldesign/lvl.html'
+document.location.href = 'level/level.html'

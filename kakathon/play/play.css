@@ -2,7 +2,7 @@ body{
   padding: 0;
   margin: 0;
   background: #204567;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .level{
   display: flex;
@@ -22,7 +22,7 @@ body{
   height: 4.35vw;
   border-radius: 4px;
   background: rgba(255,255,255,0.65);
-  transition: .5s;
+  transition: .4s;
 }
 .btn{
   display: flex;
@@ -38,8 +38,8 @@ body{
   transition: .25s;
   cursor: pointer;
   font-size: 2em;
-  width: 5vw;
-  height: 5vw;
+  width: 5.5vw;
+  height: 5.5vw;
   font-family: inherit;
   font-weight: 600;
   z-index: 10;
@@ -63,7 +63,7 @@ body{
   content: "";
   width: 90%;
   height: 90%;
-  background-image: url('donut.png');
+  background-image: url('../img/donut.png');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,13 +76,13 @@ body{
   opacity: 1;
 }
 .wall{
-  background-image: url('wall.png');
+  background-image: url('../img/wall.png');
   background-size: 150%;
   background-position: center;
   opacity: 0.65;
 }
 .finish{
-  background-image: url('finish.svg');
+  background-image: url('../img/finish.svg');
   background-size: cover;
 }
 .victory{
@@ -122,4 +122,33 @@ body{
   justify-content: center;
   align-items: center;
   font-weight: normal;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 2%;
+  bottom: 20%;
+  justify-content: space-around;
+  width: 5.5vw;
+  height: 30vw;
+  background: #1289ab;
+  color: #fff;
+  transition: .4s;
+}
+.nav_button{
+  display: flex;
+  border: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  height: 30%;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: .25s;
+}
+.nav_button:hover, .nav_button:focus{
+  background: rgba(0, 0, 0, 0.1);
 }

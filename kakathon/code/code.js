@@ -1,5 +1,9 @@
 var current = localStorage.getItem('current');
 window.onload = function() {
+  function anime() {
+    $('.scale0').removeClass('scale0');
+  }
+  setTimeout(anime, 50);
   var current = localStorage.getItem('current');
   if(localStorage.getItem(current + 'donut_code')){
     code.value = localStorage.getItem(current + 'donut_code');
@@ -15,6 +19,9 @@ function showSave() {
 }
 function hideSave() {
   $('.saver').removeClass('saved');
+}
+function link(l) {
+  document.location.href = l;
 }
 $("#code").keydown(function(event){
   if( event.keyCode !== 9 )

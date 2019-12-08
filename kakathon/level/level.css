@@ -2,16 +2,17 @@
   box-sizing: border-box;
 }
 body{
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #204567;
   padding: 0;
   margin: 0;
 }
 .levels{
-  transition: .5s;
+  transition: .4s;
 }
-.dark{
+.scale0{
   opacity: 0;
+  transform: scale(0.5);
 }
 .add{
   display: flex;
@@ -115,9 +116,37 @@ body{
   padding: 3%;
   padding-left: 5%;
   margin: 3%;
-  background: #1289ab;
+  background: #34abcd;
   color: #fff;
 }
 .curr_link > .lbutts > .current_button{
   color: #00cc78;
+}
+.nav{
+  display: flex;
+  position: fixed;
+  left: 35%;
+  bottom: 5%;
+  justify-content: space-around;
+  width: 30vw;
+  height: 5.5vw;
+  background: #1289ab;
+  color: #fff;
+  transition: .4s;
+}
+.nav_button{
+  display: flex;
+  border: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 30%;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: .25s;
+}
+.nav_button:hover, .nav_button:focus{
+  background: rgba(0, 0, 0, 0.1);
 }

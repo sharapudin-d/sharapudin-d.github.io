@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 2.5%;
   background: #204567;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 textarea{
   tab-size: 2;
@@ -14,6 +14,7 @@ textarea{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 #code{
   border: none;
@@ -23,7 +24,8 @@ textarea{
   font-size: 1.25em;
   padding: 2%;
   outline: none;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'SpaceMono', monospace;
+  transition: .4s;
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -81,4 +83,32 @@ textarea{
 }
 .saved{
   transform: translate(0);
+}
+.nav{
+  display: flex;
+  position: fixed;
+  left: 35%;
+  bottom: 5%;
+  justify-content: space-around;
+  width: 30vw;
+  height: 5.5vw;
+  background: #1289ab;
+  color: #fff;
+  transition: .4s;
+}
+.nav_button{
+  display: flex;
+  border: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 30%;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: .25s;
+}
+.nav_button:hover, .nav_button:focus{
+  background: rgba(0, 0, 0, 0.1);
 }

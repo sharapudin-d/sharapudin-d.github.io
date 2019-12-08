@@ -25,7 +25,7 @@ window.onload = function() {
     }
   }
   function load_blocks(){
-    $('.block').removeClass('scale0');
+    $('.block, .nav').removeClass('scale0');
   }
   setTimeout(load_blocks,0);
   function ref() {
@@ -77,4 +77,7 @@ window.onload = function() {
       setTimeout(ref,50);
     });
   });
+}
+function link(l) {
+  document.location.href = l;
 }
