@@ -56,21 +56,21 @@ window.onload = function() {
       $(id).addClass('wall');
     });
     $('#finish').click(function() {
-      nf = ls.getItem('finish')
+      nf = ls.getItem(current+'finish')
       ls.setItem(bl_get,'3');
       $('.finish').removeClass('finish');
       $(id).removeClass('wall player');
       $(id).addClass('finish');
-      ls.setItem('finish',bl_get)
+      ls.setItem(current+'finish',bl_get)
     });
     $('#player').click(function() {
-      np = ls.getItem('player')
+      np = ls.getItem(current+'player')
       ls.setItem(bl_get,'2');
       ls.removeItem(np);
       $('.player').removeClass('player');
       $(id).removeClass('wall finish');
-      $(id).addClass('player');
-      ls.setItem('player',bl_get)
+      $(id).addClass(current+'player');
+      ls.setItem(current+'player',bl_get)
     });
     $('.choose > div').click(function() {
       $('.choose').addClass('scale0');

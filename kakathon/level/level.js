@@ -1,4 +1,13 @@
 window.onload = function() {
+  if(!(localStorage.getItem('current'))){
+    for(let i=0;i<+localStorage.getItem('loads');i++){
+      if(localStorage.getItem('l'+i)){
+        localStorage.setItem('current','l'+i);
+        $('.llink[key="l'+i+'"]').addClass('curr_link');
+        break;
+      }
+    }
+  }
   function anime() {
     $('.scale0').removeClass('scale0');
   }
@@ -43,6 +52,17 @@ function curr(c) {
   ref();
 }
 function del(rm) {
+  for(let y=1;y<=10;y++){
+    for(let x=1;x<=10;x++){
+      let item ='l'+rm+'('+x+';'+y+')';
+      if(localStorage.getItem(item)){
+        localStorage.removeItem(item);
+      }
+    }
+  }
+  if(localStorage.getItem('current')=='l'+rm){
+    localStorage.removeItem('current')
+  }
   localStorage.removeItem('l'+rm);
   ref();
 }
