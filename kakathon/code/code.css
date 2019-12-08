@@ -7,6 +7,9 @@ body{
   background: #204567;
   font-family: 'Montserrat', sans-serif;
 }
+a{
+  color: inherit;
+}
 textarea{
   tab-size: 2;
 	-o-tab-size: 2;
