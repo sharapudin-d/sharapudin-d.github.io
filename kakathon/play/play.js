@@ -47,34 +47,54 @@ function img_move(dir) {
   $('.player').removeClass('player');
   switch (dir) {
     case 'u':
-      var id = '#b_'+x+'_'+(y-1);
-      var id_ver = find_block($(id).attr('class'),'wall');
-      if(y-1<1 || id_ver == 1){
-        id = '#b_'+x+'_'+y;
+      if(y-1>=1){
+        var id = '#b_'+x+'_'+(y-1);
+        var id_ver = find_block($(id).attr('class'),'wall');
+        if(id_ver == 1){
+          id = '#b_'+x+'_'+y;
+        }
+      }
+      else{
+        var id = '#b_'+x+'_'+y;
       }
       $(id).addClass('player');
       break;
     case 'd':
-      var id = '#b_'+x+'_'+(y+1);
-      var id_ver = find_block($(id).attr('class'),'wall');
-      if(y+1>10 || id_ver == 1){
-        id = '#b_'+x+'_'+y;
+      if(y+1<=10){
+        var id = '#b_'+x+'_'+(y+1);
+        var id_ver = find_block($(id).attr('class'),'wall');
+        if(id_ver == 1){
+          id = '#b_'+x+'_'+y;
+        }
+      }
+      else{
+        var id = '#b_'+x+'_'+y;
       }
       $(id).addClass('player');
       break;
     case 'l':
-      var id = '#b_'+(x-1)+'_'+y;
-      var id_ver = find_block($(id).attr('class'),'wall');
-      if(x-1<1 || id_ver == 1){
-        id = '#b_'+x+'_'+y;
+      if(x-1>=1){
+        var id = '#b_'+(x-1)+'_'+y;
+        var id_ver = find_block($(id).attr('class'),'wall');
+        if(id_ver == 1){
+          id = '#b_'+x+'_'+y;
+        }
+      }
+      else{
+        var id = '#b_'+x+'_'+y;
       }
       $(id).addClass('player');
       break;
     case 'r':
-      var id = '#b_'+(x+1)+'_'+y;
-      var id_ver = find_block($(id).attr('class'),'wall');
-      if(x+1>10 || id_ver == 1){
-        id = '#b_'+x+'_'+y;
+      if(x+1<=10){
+        var id = '#b_'+(x+1)+'_'+y;
+        var id_ver = find_block($(id).attr('class'),'wall');
+        if(id_ver == 1){
+          id = '#b_'+x+'_'+y;
+        }
+      }
+      else{
+        var id = '#b_'+x+'_'+y;
       }
       $(id).addClass('player');
       break;
@@ -173,7 +193,6 @@ function link(l) {
 $('.play_button').click(function() {
   var ex,code,start,end,codeid;
   codeid = current + 'donut_code'
-  console.log(is_wall('right')!=true);
   if(localStorage.getItem(codeid)){
     console.log(localStorage.getItem(codeid));
     code = localStorage.getItem(codeid);
