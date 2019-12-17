@@ -160,22 +160,22 @@ function is_wall(dir) {
   }
 }
 function Up(p=1){
-  for(i=0;i<p;i++){
+  for(let i=0;i<p;i++){
     alg+='u_';
   }
 }
 function Down(p=1){
-  for(i=0;i<p;i++){
+  for(let i=0;i<p;i++){
     alg+='d_';
   }
 }
 function Left(p=1) {
-  for(i=0;i<p;i++){
+  for(let i=0;i<p;i++){
     alg+='l_';
   }
 }
 function Right(p=1) {
-  for(i=0;i<p;i++){
+  for(let i=0;i<p;i++){
     alg+='r_';
   }
 }
@@ -184,14 +184,14 @@ function end(){
   for(let i=0;i<alg.length-1;i++){
       setTimeout(img_move,i*400,alg[i]);
   }
-  var timer = alg.length*400;
+  let timer = alg.length*400;
   $('.timer').append(timer + ' ms');
 }
 function link(l) {
   document.location.href = l;
 }
 $('.play_button').click(function() {
-  var ex,code,start,end,codeid;
+  let ex,code,start,end,codeid;
   codeid = current + 'donut_code'
   if(localStorage.getItem(codeid)){
     console.log(localStorage.getItem(codeid));
