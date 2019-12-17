@@ -111,6 +111,7 @@ body{
 }
 .llink{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 94%;
   padding: 3%;
