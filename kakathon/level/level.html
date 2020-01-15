@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Create Level</title>
-    <link rel="stylesheet" href="../all.min.css">
-    <link rel="stylesheet" href="../fonts/fonts.css">
-    <link rel="stylesheet" href="level.css">
-  </head>
-  <body>
-    <section class="levels scale0">
 
-    </section>
-    <div class="confirm scale0">
-      <h3>Enter level name</h3>
-      <input type="text" id="level_name" class="input" name="" value="">
-      <div class="butts">
-        <button type="button" class="add_button" onclick="hideInput()">Cancel</button>
-        <button type="button" class="add_button" onclick="add()">Ok</button>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>Create Level</title>
+  <link rel="stylesheet" href="../all.min.css">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="level.css">
+</head>
+
+<body>
+  <section class="levels scale0">
+
+  </section>
+  <div class="confirm scale0">
+    <h3>Enter level name</h3>
+    <input type="text" id="level_name" class="input" name="" value="">
+    <div class="butts">
+      <button type="button" class="add_button" onclick="hideInput()">Cancel</button>
+      <button type="button" class="add_button" onclick="add()">Ok</button>
     </div>
-    <div class="add scale0" onclick="showInput()">
-      <i class="fas fa-plus"></i>
-    </div>
-    <nav class="nav scale0">
-       <button class="nav_button" onclick="link('../lvldesign/lvl.html')"><i class="fas fa-pencil-ruler"></i></button>
-       <button class="nav_button" onclick="link('../code/code.html')"><i class="fas fa-code"></i></button>
-       <button class="nav_button" onclick="link('../play/play.html')"><i class="fas fa-gamepad"></i></button>
-    </nav>
-    <script type="text/javascript" src="../jquery.js"></script>
-    <script type="text/javascript" src="level.js"></script>
-  </body>
+  </div>
+  <div class="add scale0" onclick="showInput()">
+    <i class="fas fa-plus"></i>
+  </div>
+  <nav class="nav scale0">
+    <button class="nav_button" onclick="link('../lvldesign/lvl.html')"><i class="fas fa-pencil-ruler"></i></button>
+    <button class="nav_button" onclick="link('../code/code.html')"><i class="fas fa-code"></i></button>
+    <button class="nav_button" onclick="link('../play/play.html')"><i class="fas fa-gamepad"></i></button>
+  </nav>
+  <script type="text/javascript" src="../jquery.js"></script>
+  <script type="text/javascript" src="level.js"></script>
+</body>
+
 </html>

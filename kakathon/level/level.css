@@ -1,20 +1,24 @@
-*{
+* {
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: 'Montserrat', sans-serif;
   background: #204567;
   padding: 0;
   margin: 0;
 }
-.levels{
+
+.levels {
   transition: .4s;
 }
-.scale0{
+
+.scale0 {
   opacity: 0;
   transform: scale(0.5);
 }
-.add{
+
+.add {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +34,13 @@ body{
   transition: .5s;
   z-index: 10;
 }
-.add:hover{
+
+.add:hover {
   background: #fff;
   color: #204567;
 }
-.confirm{
+
+.confirm {
   position: fixed;
   left: 30%;
   top: 5%;
@@ -51,14 +57,17 @@ body{
   transition: .5s;
   z-index: 10;
 }
-.cin{
+
+.cin {
   transform: translate(0);
 }
-.confirm > h3{
+
+.confirm>h3 {
   margin-top: 0;
   margin-bottom: 5%;
 }
-.input{
+
+.input {
   width: 50%;
   outline: none;
   border: none;
@@ -68,14 +77,16 @@ body{
   padding: 1%;
   padding-left: 2%;
 }
-.butts{
+
+.butts {
   width: 30%;
   display: flex;
   justify-content: space-between;
   width: 50%;
   margin-top: 5%;
 }
-.add_button{
+
+.add_button {
   display: flex;
   width: 35%;
   justify-content: center;
@@ -90,11 +101,13 @@ body{
   font-weight: 600;
   outline: none;
 }
-.add_button:hover, .add_button:focus, .l_button:hover, .l_button:focus, .nav_button:hover, .nav_button:focus{
+
+.add_button:hover, .add_button:focus, .l_button:hover, .l_button:focus, .nav_button:hover, .nav_button:focus {
   color: #204567;
   background: #fff;
 }
-.l_button{
+
+.l_button {
   text-align: center;
   border: none;
   background: #204567;
@@ -109,7 +122,8 @@ body{
   font-weight: 600;
   outline: none;
 }
-.llink{
+
+.llink {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,10 +134,12 @@ body{
   background: #34abcd;
   color: #fff;
 }
-.curr_link > .lbutts > .current_button{
+
+.curr_link>.lbutts>.current_button {
   color: #00cc78;
 }
-.nav{
+
+.nav {
   display: flex;
   position: fixed;
   left: 35%;
@@ -135,7 +151,8 @@ body{
   color: #fff;
   transition: .4s;
 }
-.nav_button{
+
+.nav_button {
   display: flex;
   border: none;
   outline: none;
